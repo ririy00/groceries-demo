@@ -33,7 +33,9 @@ class PrimaryButton extends StatelessWidget {
             color: onPressed == null
                 ? AppTheme.of(context).background.primaryInactive
                 : AppTheme.of(context).background.brand,
-            borderRadius: BorderRadius.circular(0), // remove rounded corners
+            borderRadius: BorderRadius.circular(
+              AppTheme.of(context).radius.full,
+            ),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
